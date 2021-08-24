@@ -10,7 +10,7 @@ docker-compose build
 
 ## Run
 
-Add runner - [settings/actions/runners](https://github.com/narate/test-action/settings/actions/runners)
+Add runner - <repo>/settings/actions/runners
 
 ```
 export URL=<REPO_URL>
