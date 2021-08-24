@@ -1,0 +1,15 @@
+version: '3'
+services:
+  action:
+    build: .
+    network_mode: host
+    privileged: true
+    environment:
+    - URL=${URL}
+    - TOKEN=${TOKEN}
+    - NAME=${NAME}
+    - LABELS=${LABELS}
+    command: ./run-actions.sh
+    volumes:
+    - /data:/data
+    - /var/run/docker.sock:/var/run/docker.sock
